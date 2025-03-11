@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/f083491731.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images\flogo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <!--<li><a href="#services">Services</a></li>-->
+                    <li><a href="#portfolio">My Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <!--<p>Data Scientist</p>-->
+                <!--animation-->
+                <div class="animated-text">
+                    <span></span>
+                </div>
+                <!--till here-->
+                <h1>Hi, I'm <span>Srijan</span><br>Sharma From India</h1>
+            </div>
+        </div>
+    </div>
+    <!-- ------about------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <!--<div class="about-col-1">
+                    img src="images\this.jpg"
+                </div>-->
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am a Data Scientist, Data Analyst, Machine Learning Engineer, and Full-Stack Developer with expertise in data science, predictive modeling, and web development. With hands-on experience at Tata as a Data Analyst, I have worked on real-world data analysis, visualization, and machine learning projects. I specialize in Python, SQL, Power BI, and MERN Stack, with a strong foundation in AI/ML, data science, data structures, and problem-solving.</p>
+                    
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('experince')">Experince</p>
+                        <p class="tab-links" onclick="opentab('certification')">Certifications</p>
+                        <p class="tab-links" onclick="opentab('achievement')">Achievements</p>
+                        <p class="tab-links" onclick="opentab('tech skills')">Technical Skills</p>
+                        <p class="tab-links" onclick="opentab('soft skills')">Professional Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <!--<p class="tab-links" onclick="opentab('hobbies')">Hobbies</p>
+                        <p class="tab-links" onclick="opentab('language')">Languages</p>
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>-->
+
+                    </div>
+                    <!--<div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Data </span><br>Science</li>
+                            <li><span>Data </span><br>Analyst</li>
+                            <li><span>Data </span><br>Engineer</li>
+                            <li><span>Data </span><br>Doctor</li>
+                        </ul>
+                    </div>-->
+                    <div class="tab-contents" id="tech skills">
+                        <ul>
+                            <li><span>Power BI: </span><br>Data visualization<br>Dashboards<br>DAX Power Query</li>
+                            <li><span>Data Analysis: </span><br>SQL<br>Excel<br>Python (Pandas, NumPy, Matplotlib,Seaborn)</li>
+                            <li><span>Machine Learning: </span><br>Scikit-learn<br>TensorFlow<br>OpenCV (Object Detection)</li>
+                            <li><span>MERN Stack Development: </span><br>MongoDB<br>Express.js<br>React.js<br>Node.js</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="soft skills">
+                        <ul>
+                            <li>Problem-Solving</li>
+                            <li>Creativity</li>
+                            <li>Data-Driven Decision Making</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents active-tab" id="experince">
+                        <ul>
+                            <li><span>Business Analyst  </span><br>TATA<br>Completed virtual internship with Tata, certified by Forage I gained valuable hands on
+                                experience in turning complex business data into clear, impactful visuals.</li>
+                            <!--<li><span>Data Analyst</span><br>Tata</li>-->
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>United College of Engineering & Research :- Prayagraj,India </span><br>Bachelor of Technology (B.Tech) in Computer Science and Engineering<br>
+                                Nov 2020 - July 2024</li>
+                            <li><span>Sanskaar International School :- Prayagraj,India </span><br>Senior Secondary(XII)<br>Mar 2019 - Mar 2020</li>
+                            <!--<li><span>BHS </span><br>10th</li>-->
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="certification">
+                        <ul>
+                            <li><span>IBM Certifications</span></li>
+                            <li>Data Analysis with Python<br> Mar 2024</li>
+                                
+                            <li>Databases and SQL for Data Science with Python<br> Mar 2024</li>
+                                
+                            <li>Python Project For Data Science <br>Feb 2024</li>
+                                
+                            <li>Python for Data Science, AI and Development<br> Feb 2024</li>
+                                
+                            <li>Data Science Methodology<br>  Feb 2024</li>
+                                
+                            <li>Tools for Data Science<br>  Feb 2024</li>
+                                
+                            <li>What is Data Science<br> Feb 2024</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="achievement">
+                        <ul>
+                            <li><span>TCS National Qualifier Test</span><br>80% score<br>Nov 2023</li>
+                                
+                            <li><span>4 Star on HackerRank using</span> <br>Python<br>SQL<br>C++</li>
+                        </ul>
+                    </div>
+                    <!--<div class="tab-contents" id="hobbies">
+                        <ul>
+                            <li>Reading Books</li>
+                            <li>Drawing</li>
+                            <li>Sketching</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="language">
+                        <ul>
+                            <li>English<br></li>
+                            <li>Hindi<br></li>
+                        </ul>
+                    </div>-->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ----------Service------------ 
+     <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Data Scientist</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt harum ex illum, magnam laborum, id autem eligendi laboriosam quos repellendus saepe sunt a non, provident similique sit optio dignissimos nam.</p>
+                    <a href="#">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>Data Analyst</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt harum ex illum, magnam laborum, id autem eligendi laboriosam quos repellendus saepe sunt a non, provident similique sit optio dignissimos nam.</p>
+                    <a href="#">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i> 
+                    <h2>Data Engineer</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt harum ex illum, magnam laborum, id autem eligendi laboriosam quos repellendus saepe sunt a non, provident similique sit optio dignissimos nam.</p>
+                    <a href="#">learn more</a>
+                </div>
+            </div>
+        </div>
+     </div>-->
+
+    <!-- -----------------------portfolio-------------------- -->
+     <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="project\final power bi.png">
+                    <div class="layer">
+                        <h3>Power Bi <br>Dashboards</h3>
+                        <p>Designed and developed interactive dashboards for data-driven insights. Click here to view my Power BI projects!</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="project\Data Science.png">
+                    <div class="layer">
+                        <h3>Data Science<br>Projects</h3>
+                        <p>Developed data-driven solutions using machine learning and analytics. Click here to view my Data Science projects!</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="project/open cv.png">
+                    <div class="layer">
+                        <h3>OpenCV and Image Recognition<br>Projects</h3>
+                        <p>Developed image recognition and object detection projects using CNN, YOLO, and OpenCV in most of my work. Click here to view my projects!</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <!--<a href="#" class="btn">See More</a>-->
+        </div>
+     </div>
+
+    <!-----------------------contact--------------------------------->
+    <div id="contact">
+        <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> srijansharma2005@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i>+91 7307890738</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/srijan-sharma-b51989267/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/Srijan2101" target="_blank"><i class="fa-brands fa-square-github"></i></a>
+                    <!--<a href=""><i class="fa-brands fa-twitter-square"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>-->
+                </div>
+                <a href="images/Srijan-Sharma-Resume.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+        <!--<div class="copyright">
+            <p>Copywrite</p>
+        </div>-->
+        </div>
+    </div>
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link"); 
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        var sidemeu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemeu.style.right = "0";
+        }
+        function closemenu(){
+            sidemeu.style.right = "-200px";
+        }
+    </script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyk_4ScNtzlkz7RP-vsMbu7yTD9Qw6lYvAzAVtqLMKszr2hcQ5-5JvxrEeydz75UJJZ0w/exec'
+    const form = document.forms['submit-to-google-sheet']
+    
+    const msg = document.getElementById("msg")
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>     
